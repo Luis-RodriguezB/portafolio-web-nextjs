@@ -1,0 +1,21 @@
+// Breakpoints
+$breakpoint-device: 480px;
+$breakpoint-ipads: 768px;
+$breakpoint-small-screens: 1024px;
+$breakpoint-large-screens: 1200px;
+$breakpoint-extra-screens: 1201px;
+
+// Colors
+$color-bg-primary: #222;
+$color-bg-secondary: #fff;
+$color-bg-tertiary: #333;
+
+$color-text-primary: #000;
+$color-text-primary: #fff;
+
+$breakpoints: (
+  'small': (min-width: $breakpoint-ipads),
+  'medium': (min-width: $breakpoint-small-screens),
+  'large': (min-width: $breakpoint-large-screens),
+  'extra-large': (max-width: $breakpoint-extra-screens),
+) !default;
