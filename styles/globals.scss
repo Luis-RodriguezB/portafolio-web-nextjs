@@ -1,20 +1,51 @@
 @import './reset.scss';
 @import './utils.scss';
 @import './variables.scss';
-@import './components/Sidebar.scss';
+
+@import './components/ui/Header.scss';
+
+@import './components/sections/ContactSection.scss';
+@import './components/sections/FooterSection.scss';
+@import './components/sections/HeroSection.scss';
 
 html {
-  font-size: calc(15px + 0.390625vw);
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 body {
   background-color: $color-bg-primary;
   color: $color-text-primary;
 }
+.h-100vh {
+  height: calc(100vh - toRem(55));
+}
 
-.main {
-  padding: toRem(15);
 
-  @include respond-to('small') {
-    margin-left: toRem(110);
+.custom-link {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: toRem(4);
+}
+
+.container {
+  max-width: toRem($max-width);
+  width: 100%;
+  padding: toRem(50) toRem(20);
+  margin-left: auto;
+  margin-right: auto;
+}
+.title {
+  font-size: 3.5ch;
+  &::before {
+    content: "<>";
+    margin-right: toRem(8);
+  }
+  &::after {
+    content: "</>";
+    margin-left: toRem(8);
+  }
+  &::before, &::after {
+    font-size: toRem(24);
   }
 }

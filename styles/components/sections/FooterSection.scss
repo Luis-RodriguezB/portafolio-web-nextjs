@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: toRem(15) toRem(35);
+    border-top: $border-primary;
+
+    &__links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & > a {
+            margin: 0 toRem(13);
+
+            &:hover {
+                transform: scale(1.15);
+            }
+        }
+    }
+
+    @include respond-to('small') {
+        padding: toRem(30) toRem(35);
+    }
+}

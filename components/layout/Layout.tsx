@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { FC, PropsWithChildren } from 'react';
-import { Sidebar } from '..';
+import { Sidebar, Header } from '..';
 
 export const Layout: FC<PropsWithChildren> = ({ children }) => {
   return (
@@ -12,7 +12,7 @@ export const Layout: FC<PropsWithChildren> = ({ children }) => {
         <meta name='keywords' content='' />
       </Head>
       <>
-        <Sidebar />
+        <Header />
         <main className='main'>{children}</main>
       </>
     </>

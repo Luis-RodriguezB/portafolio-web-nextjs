@@ -1,0 +1,17 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+
+    &__form {
+        width: toRem(550);
+        margin: 0 auto;
+        flex: 1;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: toRem(10);
+        }
+    }
+}

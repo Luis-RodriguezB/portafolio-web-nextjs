@@ -12,6 +12,7 @@ $color-bg-tertiary: #333;
 
 $color-text-primary: #000;
 $color-text-primary: #fff;
+$color-blue: #00BFFF;
 
 $breakpoints: (
   'small': (min-width: $breakpoint-ipads),
@@ -19,3 +20,9 @@ $breakpoints: (
   'large': (min-width: $breakpoint-large-screens),
   'extra-large': (max-width: $breakpoint-extra-screens),
 ) !default;
+
+
+$max-width: 1250;
+
+
+$border-primary: 2px solid rgba(28, 28, 28, 0.4);

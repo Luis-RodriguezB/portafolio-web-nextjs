@@ -1,9 +1,16 @@
-import { Layout, Sidebar } from '@/components';
+import {
+  ContactSection,
+  FooterSection,
+  HeroSection,
+  Layout,
+} from '@/components';
 
 const HomePage = () => {
   return (
     <Layout>
-      <h1>Luis Rodriguez</h1>
+      <HeroSection />
+      <ContactSection />
+      <FooterSection />
     </Layout>
   );
 };
