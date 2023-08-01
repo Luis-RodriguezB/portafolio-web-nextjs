@@ -3,7 +3,7 @@ import { CTALink } from '@/interface';
 export const sidebarLinks: CTALink[] = [
   {
     title: 'About Me',
-    path: '#',
+    path: '#aboutsection',
   },
   {
     title: 'Resume',

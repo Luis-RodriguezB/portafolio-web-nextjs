@@ -1,14 +1,14 @@
 .form__group {
   position: relative;
   padding: toRem(20) 0 0;
-  margin-top: toRem(12);
+  margin-top: toRem(25);
   width: 100%;
 
   .form__field {
     font-family: inherit;
     width: 100%;
     border: none;
-    border-bottom: 2px solid #9b9b9b;
+    border-bottom: 2px solid $color-light-gray;
     outline: 0;
     color: $color-text-primary;
     padding: 7px 0;
@@ -18,10 +18,12 @@
     &::placeholder {
       color: transparent;
     }
-    &:placeholder-shown ~ .form__label {
+
+    &:placeholder-shown~.form__label {
       cursor: text;
       top: toRem(20);
     }
+
     &:focus {
       padding-bottom: 6px;
       font-weight: 700;
@@ -29,7 +31,8 @@
       border-image: linear-gradient(to right, #116399, $color-blue);
       border-image-slice: 1;
     }
-    &:focus ~ .form__label {
+
+    &:focus~.form__label {
       display: block;
       position: absolute;
       top: 0;
@@ -50,7 +53,17 @@
     position: absolute;
     top: 0;
     transition: 0.2s;
-    color: #9b9b9b;
+    color: $color-light-gray;
     pointer-events: none;
+  }
+
+  .error-message {
+    margin-top: toRem(5);
+    display: inline-block;
+    color: $color-error;
+  }
+
+  .form__field[aria-invalid='true'] {
+    border-bottom: 2px solid $color-error;
   }
 }

@@ -15,7 +15,11 @@
             gap: toRem(10);
         }
     }
+
     &__submit {
         margin-top: toRem(25);
+        color: $color-text-primary;
+        letter-spacing: 2px;
+        font-weight: 600;
     }
 }

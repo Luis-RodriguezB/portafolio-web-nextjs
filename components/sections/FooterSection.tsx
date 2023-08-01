@@ -8,7 +8,7 @@ export const FooterSection = () => {
         {footerData.map((link) => (
           <CustomLink
             key={link.title}
-            iconSize='2.5ch'
+            iconSize='3.5ch'
             onlyIcon
             _blank
             {...link}

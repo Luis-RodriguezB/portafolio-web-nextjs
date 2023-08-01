@@ -1,0 +1,1 @@
+export * as emailValidations from './isValidEmail';

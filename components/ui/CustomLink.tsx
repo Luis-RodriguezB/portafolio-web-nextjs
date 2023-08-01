@@ -9,16 +9,24 @@ interface Props extends CTALink {
   iconSize?: number | string;
 }
 
-export const CustomLink: FC<Props> = ({ title, path, Icon, className, onlyIcon, _blank, iconSize }) => {
+export const CustomLink: FC<Props> = ({
+  title,
+  path,
+  Icon,
+  className,
+  onlyIcon,
+  _blank,
+  iconSize,
+}) => {
   return (
     <Link
       href={path}
       className={`${Icon ? 'custom-link' : ''} ${className}`}
-      title={ onlyIcon ? title : undefined }
-      target={ _blank ? '_blank' : undefined }
+      title={onlyIcon ? title : undefined}
+      target={_blank ? '_blank' : undefined}
     >
       {Icon && <Icon size={iconSize} />}
-      { !onlyIcon &&  <span>{title}</span> }
+      {onlyIcon ? '' : <span>{title}</span>}
     </Link>
   );
 };

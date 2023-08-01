@@ -1,4 +1,5 @@
 import {
+  AboutSection,
   ContactSection,
   FooterSection,
   HeroSection,
@@ -9,6 +10,7 @@ const HomePage = () => {
   return (
     <Layout>
       <HeroSection />
+      <AboutSection />
       <ContactSection />
       <FooterSection />
     </Layout>
