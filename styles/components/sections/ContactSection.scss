@@ -3,7 +3,8 @@
     flex-direction: column;
 
     &__form {
-        width: toRem(550);
+        max-width: toRem(550);
+        width: 100%;
         margin: 0 auto;
         flex: 1;
 
@@ -13,5 +14,8 @@
             justify-content: center;
             gap: toRem(10);
         }
+    }
+    &__submit {
+        margin-top: toRem(25);
     }
 }

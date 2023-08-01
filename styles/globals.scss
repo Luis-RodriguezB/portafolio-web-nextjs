@@ -3,9 +3,11 @@
 @import './variables.scss';
 
 @import './components/ui/Header.scss';
+@import './components/ui/InputField.scss';
 
 @import './components/sections/ContactSection.scss';
 @import './components/sections/FooterSection.scss';
+@import './components/sections/HeroSection.scss';
 @import './components/sections/HeroSection.scss';
 
 html {
@@ -19,7 +21,6 @@ body {
 .h-100vh {
   height: calc(100vh - toRem(55));
 }
-
 
 .custom-link {
   display: flex;
@@ -37,15 +38,32 @@ body {
 }
 .title {
   font-size: 3.5ch;
+  margin-bottom: toRem(35);
+
   &::before {
-    content: "<>";
+    content: '<>';
     margin-right: toRem(8);
   }
   &::after {
-    content: "</>";
+    content: '</>';
     margin-left: toRem(8);
   }
-  &::before, &::after {
+  &::before,
+  &::after {
     font-size: toRem(24);
+    color: $color-blue;
   }
 }
+.btn {
+  padding: toRem(10) toRem(25);
+  border-radius: 3px;
+  background-color: $color-blue;
+  font-weight: 600;
+  font-weight: bold;
+
+  &:hover {
+    background-color: darken($color-blue, $amount: 5);
+    transition: background-color 300ms ease;
+  }
+}
+

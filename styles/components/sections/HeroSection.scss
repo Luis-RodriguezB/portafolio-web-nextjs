@@ -1,20 +1,24 @@
 .hero {
-    margin-top: toRem(55);
-    background-image: radial-gradient(rgba(10, 10, 10, .7), rgba(10, 10, 10, .7)), url('../../../public/images/bg-image.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  margin-top: toRem(55);
+  background-image: radial-gradient(
+      rgba(10, 10, 10, 0.7),
+      rgba(10, 10, 10, 0.7)
+    ),
+    url('../../../public/images/bg-image.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-    &__title {
-        font-size: 5ch;
-    }
-    &__subtitle {
-        font-size: 2.5ch;
-    }
+  &__title {
+    font-size: 5ch;
+  }
+  &__subtitle {
+    font-size: 2.5ch;
+  }
 }

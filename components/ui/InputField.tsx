@@ -1,24 +1,37 @@
-import { FC, HTMLInputTypeAttribute } from 'react';
-import { UseFormRegister, FieldValues } from 'react-hook-form';
+import { FC, InputHTMLAttributes } from 'react';
 
-interface Props {
-  register: UseFormRegister<FieldValues>;
-  type: HTMLInputTypeAttribute | 'textarea';
-  placeholder?: string;
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+  name: string;
+  label?: string;
+  error?: string;
+  register?: any;
+  wrapperClass?: string;
+  className?: string;
 }
 
-export const InputField: FC<Props> = ({
-  type = 'text',
-  placeholder,
+export const InputField: FC<InputProps> = ({
   register,
+  name,
+  error,
+  label,
+  wrapperClass,
+  className,
+  ...rest
 }) => {
   return (
-    <div className='input-field'>
-      {type === 'textarea' ? (
-        <textarea placeholder={placeholder} {...register}></textarea>
-      ) : (
-        <input placeholder={placeholder} {...register} />
+    <div className={`form__group field ${wrapperClass}`}>
+      <input
+        className={`form__field ${className}`}
+        placeholder='FullName'
+        {...rest}
+        {...register}
+      />
+      {label && (
+        <label htmlFor='FullName' className='form__label'>
+          {label}
+        </label>
       )}
+      {error && <span role='alert'>{error}</span>}
     </div>
   );
 };

@@ -15,6 +15,6 @@ export const sidebarLinks: CTALink[] = [
   },
   {
     title: 'Contact',
-    path: '#',
+    path: '#contactsection',
   },
 ];

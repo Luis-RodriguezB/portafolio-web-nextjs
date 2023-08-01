@@ -1,5 +1,11 @@
-import { InputField } from '.';
 import { useForm } from 'react-hook-form';
+import { InputField } from '.';
+
+type FormData = {
+  fullName: string;
+  email: string;
+  message: string;
+};
 
 export const ContactForm = () => {
   const { register } = useForm();
@@ -7,14 +13,19 @@ export const ContactForm = () => {
   return (
     <div className='contact__form'>
       <form>
-        <textarea
-          name='message'
-          id='message'
-          placeholder='Message'
-          rows={4}
-        ></textarea>
+        <input
+          type='text'
+          {...register('fullName', {
+            required: 'This field is required.',
+          })}
+        />
 
-        <button type='submit'>Enviar</button>
+
+        <InputField name='email' type='email' label='Email' />
+
+        <button className='btn contact__submit' type='submit'>
+          Enviar
+        </button>
       </form>
     </div>
   );
