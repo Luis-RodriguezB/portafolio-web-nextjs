@@ -1,0 +1,21 @@
+.skills {
+  padding-bottom: toRem(20);
+  max-height: toRem(280);
+  height: 100%;
+
+  &__title {
+    margin-bottom: toRem(25);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, toRem(50));
+    justify-content: center;
+    gap: toRem(26);
+
+    @include respond-to('small') {
+      gap: toRem(36);
+      justify-content: start;
+    }
+  }
+}

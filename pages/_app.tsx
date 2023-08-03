@@ -1,14 +1,7 @@
 import type { AppProps } from 'next/app';
 
-import { Roboto, Source_Code_Pro } from 'next/font/google';
+import { Source_Code_Pro } from 'next/font/google';
 import '@/styles/globals.scss';
-
-const roboto = Roboto({
-  weight: ['300', '400', '500', '700'],
-  subsets: ['latin'],
-  variable: '--font-roboto',
-  display: 'swap',
-});
 
 const sourceCodePro = Source_Code_Pro({
   display: 'swap',

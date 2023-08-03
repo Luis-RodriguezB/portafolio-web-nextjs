@@ -1,0 +1,23 @@
+.experienceContainer {
+  .experience-options {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: toRem(15);
+
+    button {
+      font-weight: 700;
+      font-size: toRem(16);
+
+      span {
+        font-size: inherit;
+      }
+    }
+
+    .active {
+      color: $color-blue;
+    }
+  }
+}

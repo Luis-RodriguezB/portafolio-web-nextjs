@@ -1,4 +1,4 @@
-import { BiLogoLinkedinSquare, BiLogoGithub } from 'react-icons/bi';
+import { BiLogoLinkedinSquare, BiLogoGithub, BiIdCard } from 'react-icons/bi';
 import { CTALink } from '@/interface';
 
 export const footerData: CTALink[] = [
@@ -11,5 +11,10 @@ export const footerData: CTALink[] = [
     title: 'Github',
     path: 'https://github.com/Luis-RodriguezB',
     Icon: BiLogoGithub,
+  },
+  {
+    title: 'Resume',
+    path: '#',
+    Icon: BiIdCard,
   },
 ];

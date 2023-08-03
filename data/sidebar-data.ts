@@ -7,11 +7,11 @@ export const sidebarLinks: CTALink[] = [
   },
   {
     title: 'Resume',
-    path: '#',
+    path: '#resumesection',
   },
   {
     title: 'Portafolio',
-    path: '#',
+    path: '#portafoliosection',
   },
   {
     title: 'Contact',

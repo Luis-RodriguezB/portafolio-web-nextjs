@@ -50,7 +50,10 @@ export const ContactForm = () => {
             placeholder='Email'
             {...register('email', {
               required: 'This field is required',
-              pattern: { value: emailValidations.regexValidEmail, message: 'Provide a valid email' }
+              pattern: {
+                value: emailValidations.regexValidEmail,
+                message: 'Provide a valid email',
+              },
             })}
             aria-invalid={!!errors.email}
           />

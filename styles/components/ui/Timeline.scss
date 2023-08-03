@@ -1,0 +1,45 @@
+.timeline {
+  position: relative;
+  margin-top: toRem(25);
+
+  .time {
+    position: relative;
+    border-left: 2px solid $color-blue;
+    margin-left: toRem(10);
+    padding-left: toRem(20);
+    padding-bottom: toRem(24);
+
+    &:last-child {
+      border: 0px;
+      padding-bottom: 0;
+    }
+
+    &:before {
+      content: '';
+      width: toRem(15);
+      height: toRem(15);
+      background: white;
+      border: 1px solid darken($color-blue, $amount: 5);
+      border-radius: 100%;
+      position: absolute;
+      left: -8px;
+      top: 0px;
+    }
+
+    .card {
+      letter-spacing: 1.2px;
+      &__title {
+        font-size: toRem(14);
+        letter-spacing: 1.5px;
+        font-weight: 500;
+      }
+      &__time {
+        display: inline-block;
+        margin-bottom: toRem(5);
+      }
+      &__description {
+        font-size: toRem(12);
+      }
+    }
+  }
+}

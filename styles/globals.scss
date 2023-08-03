@@ -2,13 +2,18 @@
 @import './utils.scss';
 @import './variables.scss';
 
+@import './components/ui/Experience.scss';
 @import './components/ui/Header.scss';
 @import './components/ui/InputField.scss';
+@import './components/ui/ScrollTopButton.scss';
+@import './components/ui/Skills.scss';
+@import './components/ui/Timeline.scss';
 
 @import './components/sections/AboutSection.scss';
 @import './components/sections/ContactSection.scss';
 @import './components/sections/FooterSection.scss';
 @import './components/sections/HeroSection.scss';
+@import './components/sections/ResumeSection.scss';
 
 html {
   font-size: 16px;
@@ -20,6 +25,7 @@ body {
 }
 .h-100vh {
   height: calc(100vh - toRem(55));
+  max-height: toRem(1000);
 }
 
 .custom-link {

@@ -3,6 +3,8 @@ import {
   ContactSection,
   FooterSection,
   HeroSection,
+  PortafolioSection,
+  ResumeSection,
   Layout,
 } from '@/components';
 
@@ -11,6 +13,8 @@ const HomePage = () => {
     <Layout>
       <HeroSection />
       <AboutSection />
+      <ResumeSection />
+      <PortafolioSection />
       <ContactSection />
       <FooterSection />
     </Layout>

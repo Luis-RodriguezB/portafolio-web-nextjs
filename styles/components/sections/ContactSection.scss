@@ -1,25 +1,25 @@
 .contact {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    &__form {
-        max-width: toRem(550);
-        width: 100%;
-        margin: 0 auto;
-        flex: 1;
+  &__form {
+    max-width: toRem(550);
+    width: 100%;
+    margin: 0 auto;
+    flex: 1;
 
-        form {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: toRem(10);
-        }
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: toRem(10);
     }
+  }
 
-    &__submit {
-        margin-top: toRem(25);
-        color: $color-text-primary;
-        letter-spacing: 2px;
-        font-weight: 600;
-    }
+  &__submit {
+    margin-top: toRem(25);
+    color: $color-text-primary;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
 }

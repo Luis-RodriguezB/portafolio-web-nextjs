@@ -15,7 +15,12 @@ export const AboutSection = () => {
               recusandae, quod quisquam? Sapiente maiores autem nisi atque
               accusantium aperiam repellat? Omnis.
             </p>
-            <CustomLink title='Resume' path='#' _blank className='button-primary' />
+            <CustomLink
+              title='Resume'
+              path='#'
+              _blank
+              className='button-primary'
+            />
           </div>
           <Image
             src={Coding}
