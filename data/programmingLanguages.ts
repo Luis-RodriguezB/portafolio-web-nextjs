@@ -5,6 +5,7 @@ import React from '@/public/programminglanguages/react-original.svg';
 import Nextjs from '@/public/programminglanguages/nextjs-original.svg';
 import Vuejs from '@/public/programminglanguages/vuejs-original.svg';
 import Java from '@/public/programminglanguages/java-original.svg';
+import CSharp from '@/public/programminglanguages/csharp-original.svg';
 
 interface ProgrammingLanguages {
   name: string;
@@ -39,5 +40,9 @@ export const programmingLanguages: ProgrammingLanguages[] = [
   {
     name: 'Java',
     url: Java,
+  },
+  {
+    name: 'C#',
+    url: CSharp,
   },
 ];

@@ -18,10 +18,6 @@ export const Layout: FC<PropsWithChildren> = ({ children }) => {
         <meta property='og:image' content='' />
         <meta property='og:image:alt' content='' />
 
-        <link
-          rel='stylesheet'
-          href='https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css'
-        />
       </Head>
       <>
         <Header />

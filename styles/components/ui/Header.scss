@@ -6,6 +6,7 @@
   height: toRem(55);
   background-color: $color-bg-tertiary;
   border-bottom: $border-primary;
+  z-index: 999;
 
   &__container {
     max-width: toRem($max-width);

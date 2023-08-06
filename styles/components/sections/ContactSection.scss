@@ -21,5 +21,21 @@
     color: $color-text-primary;
     letter-spacing: 2px;
     font-weight: 600;
+    font-size: toRem(16);
+
+    svg {
+      font-size: toRem(18);
+      animation: rotation 1s infinite linear;
+    }
+  }
+}
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
   }
 }

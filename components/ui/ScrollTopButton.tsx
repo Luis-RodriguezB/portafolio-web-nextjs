@@ -1,8 +1,10 @@
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { BiUpArrowCircle } from 'react-icons/bi';
 
 export const ScrollTopButton = () => {
   const [visible, setVisible] = useState(false);
+  const router = useRouter();
 
   const toggleVisible = () => {
     const scrollTop = document.documentElement.scrollTop;
@@ -10,6 +12,9 @@ export const ScrollTopButton = () => {
   };
 
   const onGoTopScroll = () => {
+    if (router.asPath.length > 1) {
+      router.replace('/');
+    }
     if (typeof window !== 'undefined') {
       window.scroll({
         top: 0,

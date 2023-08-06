@@ -61,7 +61,8 @@ body {
   }
 }
 .btn {
-  padding: toRem(10) toRem(25);
+  padding: toRem(10) 0;
+  height: toRem(40);
   border-radius: 3px;
   background-color: $color-blue;
   font-weight: 600;

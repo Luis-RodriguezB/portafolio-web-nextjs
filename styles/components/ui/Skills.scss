@@ -10,12 +10,21 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(4, toRem(50));
-    justify-content: center;
-    gap: toRem(26);
+    justify-content: space-between;
+    row-gap: toRem(45);
 
     @include respond-to('small') {
-      gap: toRem(36);
-      justify-content: start;
+      padding-right: toRem(55);
+    }
+
+    &-item {
+      img {
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+      }
     }
   }
 }
